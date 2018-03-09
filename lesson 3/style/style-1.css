@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    color: #111;
+    counter-reset: enum-section;
+}
+
+section{
+    overflow: hidden;
+}
+/* Start Header */
+header {
+    background: #fff;
+    height: 110px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+/* padding: 0 10px; */
+font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+font-size: 14px;
+text-transform: uppercase;
+}
+
+nav a:hover {
+   border-bottom: 4px solid #e8bf5d;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.logo  span {
+    color: #e8bf5d;
+    font-weight: 900;
+}
+/* End Header */
+
+/* Start Hiro section */
+.hero {
+    background:  linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(51, 51, 51, 0.8) ), url(../image/hero.jpg) no-repeat top center;
+    min-width: 920px;
+    width: 1920px;
+    margin: 110px auto 0;
+    min-height: 760px;
+    max-height: 860px;
+    height:  calc(100vh - 135px);
+    overflow: hidden;
+    display: flex;
+    color: #fff;
+}
+
+.name-hero {
+    width: 970px;
+    margin: 605px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.name-hero button {
+    border-radius: 25px;
+    height: 50px;
+    width: 175px;
+    background-color: #e8bf5d;
+    border:none;
+    font: 16px 'Playfair Display' ;
+}
+
+.name-hero > .name {
+    border-left: 2px solid #e8bf5d;
+    font: 65px 'Playfair Display', serif;
+    color:fff;
+    padding-left: 15px;
+}
+.name span {
+    font: 31px 'Open Sans';
+}
+
+/* Start sectoin About US */
+.head-section::before {
+    font: 195px/85px 'Open Sans';
+    counter-increment: enum-section ;
+    content: "0" counter(enum-section) ;
+    opacity: .05;
+}
+
+.head-section {
+    width: 1170px;
+    border-left: 2px solid #e8bf5d;
+    font: 31px 'Playfair Display', serif;
+    margin:80px auto 65px
+}
+
+.head-section > h2 {
+    font: 31px 'Playfair Display', serif;
+    margin: -90px 0 0 20px;
+}
+
+.head-section > p {
+    margin: 5px 0 0 20px;
+    font: 21px 'Playfair Display', serif;
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto 85px;
+}
+
+.info-blocks h3 {
+    font: 21px 'Playfair Display', serif;
+    margin-bottom: 35px;
+}
+
+.info-blocks dl{
+    width: 500px;
+}
+.info-blocks dt{
+    margin-right: 35px;
+    font: bold 21px "Open Sans" ;
+    vertical-align: text-bottom;
+}
+
+.info-blocks dd{
+    font: 16px "Open Sans";
+    margin-bottom: 40px;
+}
+
+.info-blocks dt, .info-blocks dd {
+    display: inline-block;
+}
+
+.info-block {
+    width: 550px;
+    font: 14px/31px "Open Sans";
+}
+/* End section About US */
+
+/* Start section Practis Area */
+.dark-section{
+    background-color: #111;
+     color: #fff; 
+}
+
+.practis-area dl{
+    width: 1000px;
+    margin: 0 auto 100px;
+}
+
+.practis-area dt{
+    margin-bottom: 30px;
+}
+
+.block-1, .block-2, .block-3, .block-4{
+    margin-top: 65px;
+    display: inline-block;
+    width: 415px;
+    padding-left: 80px;
+ 
+}
+
+.practis-area dd {
+    font: 14px 'Open Sans'; 
+}
+
+.practis-area dl{
+    font: 21px 'Playfair Display', serif;
+}
+
+.block-1{
+    background: url("../image/pictogram_06.png") no-repeat;
+}
+
+.block-2{
+    background: url("../image/pictogram_03.png") no-repeat;
+}
+
+.block-3{
+    background: url("../image/pictogram_11.png") no-repeat;
+}
+
+.block-4{
+    background: url("../image/pictogram_13.png") no-repeat;
+}
+
+/* End section Practis Area */
+
+/* Start section Meet our Attorney */
+.attorney{
+    width: 1215px;
+    margin: 0 auto;
+}
+.attorney  .persons{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.attorney .person{
+    display: inline-block; 
+    width: 270px;
+    margin-bottom: 100px;
+
+}
+
+.attorney .person p{
+    font: 21px 'Playfair Display', serif;
+}
+
+.attorney .person span{
+    font: 14px "Open Sans";
+    color: #666;
+}
+/* End section Meet our Attorney */
+/* Start section Publications */
+.publications{
+    background: #111 url(../image/bg_section.jpg) no-repeat center 0;
+    min-height: 747px;
+}
+
+
+.slider {
+    width: 1100px;
+    margin: 0 auto;    
+    overflow: hidden;
+}
+
+.slider img{
+    box-shadow: 20px 20px 0 #e8bf5d; 
+    float: left;
+}
+
+.decoration{
+    margin-left: 35px ;
+    float: left;
+    font: 95px/95px "Playfair Display", sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+    width: 45px;
+    height: 220px;
+}
+
+.slider .text-ceo{
+    margin-left: 35px;
+    font: 14px "Open Sans", sans-serif;
+}
+.text-ceo .text{
+    padding-top: 25px;
+}
+
+.text > p {
+    margin-top: 30px;
+    font: 24px "Open Sans", sans-serif;
+}
+
+.text span {
+    font: 14px "Open Sans", sans-serif;
+}
+
+/* End section Publications */
+/* Start publication-hub */
+.publication-hub {
+    width: 1170px;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    border-bottom: 3px solid #e8bf5d;    
+}
+
+.post h3 {
+   font: 21px 'Playfair Display', serif;
+   margin-top: 30px;    
+}
+
+.post .text-post {
+    margin-top: 35px
+}
+
+.metadate {
+display: flex;
+justify-content: space-between;
+}
+
+.metadate .author, .metadate .date{
+    font: 16px 'Open sans', sans-serif;
+}
+
+.metadate .author span, .metadate .date{
+ color: #666;
+}
+
+
+.attr {
+    margin: 40px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments, .share {
+padding-left: 25px;
+/* display: ; */
+}
+
+.comments{
+    background: url('../image/pic_38.png') no-repeat;
+}
+
+.share{
+    background: url('../image/pic_41.png') no-repeat;
+}
+/* End publication-hub */
+/* Start FAQ */
+.shadow-decor {
+    width: 1170px;
+    margin: 0 auto 170px;  
+}
+
+.shadow-decor > div {
+    border-radius: 2px;
+    padding: 45px 45px 70px 45px;
+    font: 14px/31px "Open sens", sans-serif;
+    color: #000;
+    display: inline-block;
+    background-color: rgba(323, 191, 93, 1);
+    box-shadow: 0 0 25px rgba(323, 191, 93, 0.5);  
+}
+/* End FAQ*/
+/* Start Contact */
+.mine-wrap {
+    width: 1170px;
+    margin: 0 auto;
+    border: 1px solid  rgba(213, 213,213, 0.5);
+    box-shadow: 0 0 25px rgba(213, 213, 213, 0.5);
+    margin-bottom: 75px; 
+}
+
+.form {
+    margin-left: 150px;
+    height: 490px;
+    width: 870px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.input-form {
+    margin: 90px 35px 50px 50px;
+ 
+}
+
+.input-form textarea, .input-form input[type="text"] {
+    display: block;
+    font: italic 14px  "Open sens", serif;
+    margin-bottom: 30px;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    color: #b9b9b9;
+    resize: none;
+}
+
+.input-form input[type="submit"]{
+    width: 170px;
+    height: 50px ;
+    background-color: #e8bf5d;
+    border-radius: 25px;
+    border: none;
+    font: 16px "Open sens", serif;
+}
+
+.form .map{
+    margin: 50px 70px  0 ;
+}
+
+#google-map {
+    height: 360px;
+    width: 360px;
+    box-shadow: -25px 25px 0 #e8bf5d;
+   }
+
+
+/* End Contact */
+/* Start Footer */
+footer{
+    background-color: #111;
+    color: #fff;
+}
+
+.social{
+    width: 1100px;
+    margin: 0 auto;
+    font: 16px/80px 'Playfair Display', serif;
+}
+
+footer ul a {
+    margin-left: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float:right;
+}
+
+footer ul {
+    display: block;
+    width: 180px;
+    height: 40px;
+    float:right;
+}
+
+footer ul li {
+    margin-top: 35px;
+    display: block;
+    float:right;
+}
+
+.fb{
+    background: url(../image/s_icon_03.png) no-repeat center center; 
+} 
+
+.tw{
+    background: url(../image/s_icon_05.png) no-repeat center center;
+} 
+.gplus{
+    background: url(../image/s_icon_07.png) no-repeat center center;
+} 
+
+.inst {
+    background: url(../image/s_icon_10.png) no-repeat center center;
+}
+
+/* End Footer */
